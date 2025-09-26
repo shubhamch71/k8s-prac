@@ -1,0 +1,9 @@
+# dev-user-token.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dev-user-token
+  namespace: test
+  annotations:
+    kubernetes.io/service-account.name: dev-user
+type: kubernetes.io/service-account-token

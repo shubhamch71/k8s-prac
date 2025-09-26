@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: dev-quota
+  namespace: test
+spec:
+  hard:
+    cpu: "2"
+    memory: 4Gi
+    pods: "3"
+status: {}
